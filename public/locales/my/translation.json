@@ -1,0 +1,62 @@
+{
+  "language": {
+    "name": "ဘာသာစကား",
+    "en": "English",
+    "my": "Myanmar"
+  },
+  "nav": {
+    "rent": "ငှားရန်",
+    "buy": "ဝယ်ရန်",
+    "sell": "ရောင်းရန်"
+  },
+  "buy": {
+    "user": {
+      "name": "ရောင်းသူ",
+      "placeholder": "Maung Maung"
+    },
+    "title": {
+      "name": "ခေါင်းစဥ်",
+      "placeholder": "လှည်းတန်း သုံးလွှာတိုက်ခန်း အရောင်း"      
+    },
+    "description": {
+      "name": "",
+      "placeholder": ""
+    },
+    "type": {
+      "name": "အမျိုးအစား",
+      "values": [
+        "တိုက်ခန်း",
+        "ကွန်ဒို",
+        "လုံးချင်းအိမ်"
+      ]
+    },
+    "location": {
+      "name": "တည်နေရာ",
+      "street": "လမ်း",
+      "quarter": "ရက်ကွက်",
+      "township": "မြို့နယ်",
+      "state_or_division": "တိုင်း (သို့မဟုတ်) ပြည်နယ်",
+      "coordinate": "တည်နေရာ ကိုအော်ဒီနိတ်",
+      "fill_coordinate": "အော်တိုဖြည့်"
+    },
+    "floor": "အလွှာ",
+    "places_nearby": "အနီးအနားရှိနေရာများ",
+    "flooring": "ကြမ်းခင်းအမျိုးအစား",
+    "length": "အလျား",
+    "width": "အနံ",
+    "lot_length": "ခြံအလျား",
+    "lot_width": "ခြံအနံ",
+    "bedrooms": "အိပ်ခန်းအရေအတွက်",
+    "bathrooms": "ရေချိုးခန်းအရေအတွက်",
+    "hall": "အခန်းဖွဲ့ပြီး?",
+    "price": {
+      "name": "စျေး",
+      "values": [
+        "ကျပ်",
+        "ဒေါ်လာ"
+      ]
+    },
+    "created_at": "Date",
+    "updated_at": "Date"
+  }
+}

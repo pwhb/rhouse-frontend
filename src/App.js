@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useTranslation } from "react-i18next";
 
-function App() {
+import Footer from "./components/Footer";
+import ResponsiveContainer from "./components/ResponsiveContainer";
+import Home from "./pages/Home";
+import Rent from "./pages/Rent";
+import Buy from "./pages/Buy";
+import Sell from "./pages/Sell";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Container } from "semantic-ui-react";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ResponsiveContainer>
+        <Container style={{ margin: "2rem 0rem", minHeight: "24rem" }}>
+          <Routes>
+            <Route path="rent" element={<Rent />} />
+            <Route path="buy" element={<Buy />} />
+            <Route path="sell" element={<Sell />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Container>
+        <Footer />
+      </ResponsiveContainer>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

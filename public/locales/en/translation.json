@@ -1,0 +1,69 @@
+{
+  "language": {
+    "name": "Language",
+    "en": "English",
+    "my": "Myanmar"
+  },
+  "nav": {
+    "rent": "Rent",
+    "buy": "Buy",
+    "sell": "Sell"
+  },
+  "buy": {
+    "user": {
+      "name": "Seller",
+      "placeholder": "Michael Moore"
+    },
+    "title": {
+      "name": "Title",
+      "placeholder": "Hledan 3rd floor Apartment For Sale"      
+    },
+    "description": {
+      "name": "Description",
+      "placeholder": ""
+    },
+    "type": {
+      "name": "Type",
+      "values": [
+        "Apartment",
+        "Condo",
+        "House"
+      ]
+    }, 
+    "location": {
+      "name": "Location",
+      "street": "Street",
+      "quarter": "Quarter",
+      "township": "Township",
+      "state_or_division": "State or Division",
+      "coordinate": "Coordinate",
+      "fill_coordinate": "Auto-fill",
+      "placeholder": {
+        "street": "San Yike Nyein St",
+        "quarter": "Quarter",
+        "township": "Township",
+        "state_or_division": "State or Division",
+        "coordinate": "Coordinate"
+      }
+    },
+    "floor": "Floor",
+    "places_nearby": "Nearby places",
+    "flooring": "Flooring",
+    "length": "Length (longer side)",
+    "width": "Width (shorter side)",
+    "lot_length": "Lot Length (longer side)",
+    "lot_width": "Lot Width (shorter side)",
+    "bedrooms": "Number of bedrooms",
+    "bathrooms": "Number of bathrooms",
+    "hall": "Is it partitioned?",
+    "price": {
+      "name": "Price",
+      "values": [
+        "MMK",
+        "USD"
+      ]
+    },
+    "created_at": "Date",
+    "updated_at": "Date"
+  }
+}
