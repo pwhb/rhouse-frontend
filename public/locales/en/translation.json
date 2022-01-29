@@ -9,6 +9,116 @@
     "buy": "Buy",
     "sell": "Sell"
   },
+  "options": {
+    "type": {
+      "apartment": "Apartment",
+      "condo": "Condo",
+      "house": "House"
+    },
+    "states": {
+      "ayeyarwaddy": "Ayeyarwaddy",
+      "bago": "Bago",
+      "chin": "Chin",
+      "kachin": "Kachin",
+      "kayah": "Kayah",
+      "kayin": "Kayin",
+      "magwe": "Magwe",
+      "mandalay": "Mandalay",
+      "mon": "Mon",
+      "rakhine": "Rakhine",
+      "sagaing": "Sagaing",
+      "shan": "Shan",
+      "thaninthayi": "Thaninthayi",
+      "yangon": "Yangon"
+    },
+    "townships": {
+      "13": {
+        "ahlone": "Ahlone",
+        "bahan": "Bahan",
+        "botataung": "Botataung",
+        "cocokyun": "Cocokyun",
+        "dagon": "Dagon",
+        "dagon seikkan": "Dagon Seikkan",
+        "dala": "Dala",
+        "dawbon": "Dawbon",
+        "east dagon": "East Dagon",
+        "hlaing": "Hlaing",
+        "hlaingthaya": "Hlaingthaya",
+        "hlegu": "Hlegu",
+        "hmawbi": "Hmawbi",
+        "htantabin": "Htantabin",
+        "insein": "Insein",
+        "kamayut": "Kamayut",
+        "kawhmu": "Kawhmu",
+        "kayan": "Kayan",
+        "kungyangon": "Kungyangon",
+        "kyauktada": "Kyauktada",
+        "kyauktan": "Kyauktan",
+        "kyimyindaing": "Kyimyindaing",
+        "lanmadaw": "Lanmadaw",
+        "latha": "Latha",
+        "mayangon": "Mayangon",
+        "mingala taungnyunt": "Mingala Taungnyunt",
+        "mingaladon": "Mingaladon",
+        "north dagon": "North Dagon",
+        "north okkalapa": "North Okkalapa",
+        "pabedan": "Pabedan",
+        "pazundaung": "Pazundaung",
+        "sanchaung": "Sanchaung",
+        "seikkan": "Seikkan",
+        "seikkyi kanaungto": "Seikkyi Kanaungto",
+        "shwepyitha": "Shwepyitha",
+        "south dagon": "South Dagon",
+        "south okkalapa": "South Okkalapa",
+        "taikkyi": "Taikkyi",
+        "tamwe": "Tamwe",
+        "thaketa": "Thaketa",
+        "thanlyin": "Thanlyin",
+        "thingangyun": "Thingangyun",
+        "thongwa": "Thongwa",
+        "twante": "Twante",
+        "yankin": "Yankin"
+      }
+    },
+    "currency": {
+      "mmk": "MMK",
+      "usd": "USD"
+    }
+  },
+  "listing": {
+    "length": "Length (Longer Side)",
+    "width": "Width (Shorter Side)",
+    "lot_length": "Lot Length (Longer Side)",
+    "lot_width": "Lot Width (Shorter Side)",
+    "price": "Price",
+    "mortgage_ok": "Is mortgage available?",
+    "township": "Township",
+    "state_or_division": "State or Division",
+    "room": "Lot No.",
+    "room_and_building": "Room No., Building No.",
+    "street": "Street",
+    "quarter": "Quarter"
+  },
+  "auth": {
+    "first_name": "First Name *",
+    "last_name": "Last Name",
+    "email": "Email *",
+    "password": "Password *",
+    "confirmPassword": "Password Again *",
+    "login_title": "Log in to your account",
+    "register_title": "Create your account",
+    "show_password": "Show password",
+    "login": "Login",
+    "register": "Register"
+  },
+  "sell": {
+    "title": "Create a listing",
+    "sell_title": "Create a sale listing",
+    "rent_title": "Create a rental listing",
+    "sell": "Sell",
+    "rent": "Rent",
+    "submit": "Submit"
+  },
   "buy": {
     "user": {
       "name": "Seller",
@@ -16,7 +126,7 @@
     },
     "title": {
       "name": "Title",
-      "placeholder": "Hledan 3rd floor Apartment For Sale"      
+      "placeholder": "Hledan 3rd floor Apartment For Sale"
     },
     "description": {
       "name": "Description",
@@ -29,7 +139,7 @@
         "Condo",
         "House"
       ]
-    }, 
+    },
     "location": {
       "name": "Location",
       "street": "Street",
@@ -49,10 +159,6 @@
     "floor": "Floor",
     "places_nearby": "Nearby places",
     "flooring": "Flooring",
-    "length": "Length (longer side)",
-    "width": "Width (shorter side)",
-    "lot_length": "Lot Length (longer side)",
-    "lot_width": "Lot Width (shorter side)",
     "bedrooms": "Number of bedrooms",
     "bathrooms": "Number of bathrooms",
     "hall": "Is it partitioned?",

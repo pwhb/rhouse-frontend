@@ -9,6 +9,116 @@
     "buy": "ဝယ်ရန်",
     "sell": "ရောင်းရန်"
   },
+  "options": {
+    "type": {
+      "apartment": "တိုက်ခန်း",
+      "condo": "ကွန်ဒို",
+      "house": "လုံးချင်းအိမ်"
+    },
+    "states": {
+      "ayeyarwaddy": "ဧရာဝတီ",
+      "bago": "ပဲခူး",
+      "chin": "ချင်း",
+      "kachin": "ကချင်",
+      "kayah": "ကယား",
+      "kayin": "ကရင်",
+      "magwe": "မကွေး",
+      "mandalay": "မန္တလေး",
+      "mon": "မွန်",
+      "rakhine": "ရခိုင်",
+      "sagaing": "စစ်ကိုင်း",
+      "shan": "ရှမ်း",
+      "thaninthayi": "တနင်္သာရီ",
+      "yangon": "ရန်ကုန်"
+    },
+    "townships": {
+      "13": {
+        "ahlone": "အလုံ",
+        "bahan": "ဗဟန်း",
+        "botataung": "ဗိုလ်တစ်ထောင်",
+        "cocokyun": "ကိုကိုးကျွန်း",
+        "dagon": "ဒဂုံ",
+        "dagon seikkan": "ဒဂုံဆိပ်ကမ်း",
+        "dala": "ဒလ",
+        "dawbon": "ဒေါပုံ",
+        "east dagon": "အရှေ့ဒဂုံ",
+        "hlaing": "လှိုင်",
+        "hlaingthaya": "လှိုင်သာယာ",
+        "hlegu": "လှည်းကူး",
+        "hmawbi": "မှော်ဘီ",
+        "htantabin": "ထန်းတပင်",
+        "insein": "အင်းစိန်",
+        "kamayut": "ကမာရွတ်",
+        "kawhmu": "ကော့မှူး",
+        "kayan": "ခရမ်း",
+        "kungyangon": "ကွမ်းခြံကုန်း",
+        "kyauktada": "ကျောက်တံတား",
+        "kyauktan": "ကျောက်တန်း",
+        "kyimyindaing": "ကြည့်မြင်တိုင်",
+        "lanmadaw": "လမ်းမတော်",
+        "latha": "လသာ",
+        "mayangon": "မရမ်းကုန်း",
+        "mingala taungnyunt": "မင်္ဂလာတောင်ညွန့်",
+        "mingaladon": "မင်္ဂလာဒုံ",
+        "north dagon": "မြောက်ဒဂုံ",
+        "north okkalapa": "မြောက်ဥက္ကလာပ",
+        "pabedan": "ပန်းဘဲတန်း",
+        "pazundaung": "ပုစွန်တောင်",
+        "sanchaung": "စမ်းချောင်း",
+        "seikkan": "Seikkan",
+        "seikkyi kanaungto": "ဆိပ်ကြီးခနောင်တို",
+        "shwepyitha": "ရွှေပြည်သာ",
+        "south dagon": "တောင်ဒဂုံ",
+        "south okkalapa": "တောင်ဥက္ကလာပ",
+        "taikkyi": "တိုက်ကြီး",
+        "tamwe": "တာမွေ",
+        "thaketa": "သာကေတ",
+        "thanlyin": "သန်လျင်",
+        "thingangyun": "သင်္ကန်းကျွန်း",
+        "thongwa": "သုံးခွ",
+        "twante": "တွံတေး",
+        "yankin": "ရန်ကင်း"
+      }
+    },
+    "currency": {
+      "mmk": "ကျပ်",
+      "usd": "ဒေါ်လာ"
+    }
+  },
+  "listing": {
+    "length": "အလျား",
+    "width": "အနံ",
+    "lot_length": "ခြံအလျား",
+    "lot_width": "ခြံအနံ",
+    "price": "တန်ဖိုး",
+    "mortgage_ok": "အရစ်ကျ ‌ငွေပေးချေနိုင်သည်",
+    "township": "မြို့နယ်",
+    "state_or_division": "ပြည်နယ် (သို့မဟုတ်) တိုင်း",
+    "room": "အိမ်နံပါတ်",
+    "room_and_building": "အခန်းနံပါတ်၊ တိုက်နံပါတ်",
+    "street": "လမ်း",
+    "quarter": "ရက်ကွက်"
+  },
+  "auth": {
+    "first_name": "အမည် *",
+    "last_name": "Last Name",
+    "email": "Email *",
+    "password": "Password *",
+    "confirmPassword": "သေချာအောင် Password ထပ်ဖြည့်ပါ *",
+    "login_title": "အကောင့်ထဲဝင်ရန်",
+    "register_title": "အကောင့်သစ်လုပ်ရန်",
+    "show_password": "Password ပြပါ",
+    "login": "Login",
+    "register": "Register"
+  },
+  "sell": {
+    "title": "ကြော်ငြာတင်ရန်",
+    "sell_title": "အိမ်အ‌ရောင်းကြော်ငြာ တင်ရန်",
+    "rent_title": "အိမ်အငှားကြော်ငြာ တင်ရန်",
+    "sell": "အရောင်း",
+    "rent": "အငှား",
+    "submit": "တင်မည်"
+  },
   "buy": {
     "user": {
       "name": "ရောင်းသူ",
@@ -16,7 +126,7 @@
     },
     "title": {
       "name": "ခေါင်းစဥ်",
-      "placeholder": "လှည်းတန်း သုံးလွှာတိုက်ခန်း အရောင်း"      
+      "placeholder": "လှည်းတန်း သုံးလွှာတိုက်ခန်း အရောင်း"
     },
     "description": {
       "name": "",
@@ -42,10 +152,6 @@
     "floor": "အလွှာ",
     "places_nearby": "အနီးအနားရှိနေရာများ",
     "flooring": "ကြမ်းခင်းအမျိုးအစား",
-    "length": "အလျား",
-    "width": "အနံ",
-    "lot_length": "ခြံအလျား",
-    "lot_width": "ခြံအနံ",
     "bedrooms": "အိပ်ခန်းအရေအတွက်",
     "bathrooms": "ရေချိုးခန်းအရေအတွက်",
     "hall": "အခန်းဖွဲ့ပြီး?",

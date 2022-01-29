@@ -12,15 +12,19 @@ import { gql, useMutation } from "@apollo/client";
 
 import { useLocation, useNavigate } from "react-router-dom";
 
-import { useForm } from "../hooks";
+import { useForm } from "../hooks/useForm";
 
 import { AuthContext } from "../context/auth";
+import { useTranslation } from "react-i18next";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   // Error handling
   const [errors, setErrors] = useState({});
+
+  // Language Support
+  const { t, i18n } = useTranslation();
 
   const authCallback = () => {
     console.log(values);
@@ -52,7 +56,7 @@ const Register = () => {
     <Grid textAlign="center" style={{ height: "80vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
         <Header as="h2" textAlign="center">
-          Create your account
+          {t("auth.register_title")}
         </Header>
         <Form
           size="large"
@@ -60,32 +64,54 @@ const Register = () => {
           className={loading ? "loading" : ""}
         >
           <Segment stacked textAlign="left">
-            <Form.Group widths="equal">
-              <Form.Input
-                fluid
-                placeholder="First name *"
-                name="first_name"
-                value={values.first_name}
-                error={errors?.first_name ? true : false}
-                onChange={onChange}
-              />
-              <Form.Input
-                fluid
-                placeholder="Last name"
-                name="last_name"
-                value={values.last_name}
-                onChange={onChange}
-              />
-            </Form.Group>
-            {errors?.first_name && (
-              <Message negative>{errors?.first_name}</Message>
+            {i18n.language === "my" ? (
+              <>
+                {" "}
+                <Form.Input
+                  fluid
+                  icon="user"
+                  iconPosition="left"
+                  placeholder={t("auth.first_name")}
+                  name="first_name"
+                  value={values.first_name}
+                  error={errors?.first_name ? true : false}
+                  onChange={onChange}
+                />
+                {errors?.first_name && (
+                  <Message negative>{errors?.first_name}</Message>
+                )}
+              </>
+            ) : (
+              <>
+                {" "}
+                <Form.Group widths="equal">
+                  <Form.Input
+                    fluid
+                    placeholder={t("auth.first_name")}
+                    name="first_name"
+                    value={values.first_name}
+                    error={errors?.first_name ? true : false}
+                    onChange={onChange}
+                  />
+                  <Form.Input
+                    fluid
+                    placeholder={t("auth.last_name")}
+                    name="last_name"
+                    value={values.last_name}
+                    onChange={onChange}
+                  />
+                </Form.Group>
+                {errors?.first_name && (
+                  <Message negative>{errors?.first_name}</Message>
+                )}{" "}
+              </>
             )}
 
             <Form.Input
               fluid
-              icon="user"
+              icon="mail"
               iconPosition="left"
-              placeholder="Email *"
+              placeholder={t("auth.email")}
               name="email"
               value={values.email}
               error={errors?.email ? true : false}
@@ -96,7 +122,7 @@ const Register = () => {
               fluid
               icon="lock"
               iconPosition="left"
-              placeholder="Password *"
+              placeholder={t("auth.password")}
               type={showPassword ? "text" : "password"}
               name="password"
               value={values.password}
@@ -108,7 +134,7 @@ const Register = () => {
               fluid
               icon="lock"
               iconPosition="left"
-              placeholder="Password Again *"
+              placeholder={t("auth.confirmPassword")}
               type={showPassword ? "text" : "password"}
               name="confirmPassword"
               value={values.confirmPassword}
@@ -120,7 +146,7 @@ const Register = () => {
             )}
             <Form.Checkbox
               value={showPassword}
-              label="Show password"
+              label={t("auth.show_password")}
               onChange={() => setShowPassword((prevState) => !prevState)}
             />
             <Button primary fluid size="large" onClick={onSubmit}>

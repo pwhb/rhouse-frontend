@@ -12,9 +12,10 @@ import { gql, useMutation } from "@apollo/client";
 
 import { useNavigate } from "react-router-dom";
 
-import { useForm } from "../hooks";
+import { useForm } from "../hooks/useForm";
 
 import { AuthContext } from "../context/auth";
+import { useTranslation } from "react-i18next";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -22,6 +23,9 @@ const Login = () => {
   // Error handling
   const [errors, setErrors] = useState({});
 
+  // Language Support
+  const { t } = useTranslation();
+  // console.log(i18n.language)
   const authCallback = () => {
     console.log(values);
 
@@ -52,7 +56,7 @@ const Login = () => {
     <Grid textAlign="center" style={{ height: "80vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
         <Header as="h2" textAlign="center">
-          Log in to your account
+          {t("auth.login_title")}
         </Header>
         <Form
           size="large"
@@ -62,9 +66,9 @@ const Login = () => {
           <Segment stacked textAlign="left">
             <Form.Input
               fluid
-              icon="user"
+              icon="mail"
               iconPosition="left"
-              placeholder="Email *"
+              placeholder={t("auth.email")}
               name="email"
               value={values.email}
               error={errors.email ? true : false}
@@ -75,7 +79,7 @@ const Login = () => {
               fluid
               icon="lock"
               iconPosition="left"
-              placeholder="Password *"
+              placeholder={t("auth.password")}
               type={showPassword ? "text" : "password"}
               name="password"
               value={values.password}
@@ -85,7 +89,7 @@ const Login = () => {
             {errors.password && <Message negative>{errors.password}</Message>}
             <Form.Checkbox
               value={showPassword}
-              label="Show password"
+              label={t("auth.show_password")}
               onChange={() => setShowPassword((prevState) => !prevState)}
             />
             <Button primary fluid size="large" onClick={onSubmit}>

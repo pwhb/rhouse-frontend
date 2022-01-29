@@ -11,6 +11,7 @@ import Register from "./pages/Register";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Container } from "semantic-ui-react";
+import "./App.css"
 
 const App = () => {
   return (

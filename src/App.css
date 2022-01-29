@@ -1,0 +1,15 @@
+.currency {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  align-items: center;
+}
+
+.currency-input {
+  max-width: 50%;
+}

@@ -3,10 +3,8 @@ import { Dropdown } from "semantic-ui-react";
 import { useTranslation } from "react-i18next";
 
 const SelectLanguage = ({ fixed }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const changeLanguage = (e, data) => {
-    // console.log(e.target);
-    console.log(i18n.language);
     i18n.changeLanguage(data.value);
   };
 
